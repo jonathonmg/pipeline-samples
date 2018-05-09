@@ -1,0 +1,8 @@
+when {
+  environment ignoreCase: true, name: 'MY_ENV_VAR', value: 'doit'
+  beforeAgent true
+  node ('mac-1') {
+   echo 'Hello World' 
+      
+  }
+}
